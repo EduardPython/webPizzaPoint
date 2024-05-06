@@ -1,0 +1,337 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/***** Reusable Components *****/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ca3301;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    word-spacing: 2.8px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 250px;
+    border-bottom: solid 2px #ca3301;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/***** HEADER *****/
+
+/* Header */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
+    background-size: cover;
+    height: 100vh;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+
+/* Logo */
+
+#logo {
+    float: left;    
+    margin: 0 auto;
+    position: absolute;
+    top: 4%;
+    left: 121px;    
+}
+
+#logo img {
+    width: 100px;
+}
+
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    height: 50px;
+    /* margin: 0 auto; */
+    /* z-index: 9999; */
+    
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
+
+nav ul {
+    float: right;
+    margin-top: 2%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    text-shadow: 1px -1px 1.5px black; /* Horizontální a vertikální posun stínu, rozmazání a barva */
+
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 4px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    transition: border-bottom 0.5s;
+    border-bottom: 3px solid #ca3301;    
+}
+
+nav ul li img {
+    width: 50px;
+}
+
+
+/* Header Text */
+
+.header_text {
+    /* text-align: center; */
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    transform: translate(-50%, -50%);   /* nastavení pozice */
+}
+
+.header_text h1 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    word-spacing: 3.5px;
+    margin-bottom: 10px;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2.5px solid #972600;
+    border-radius: 50px;
+    padding: 11px 21px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: #ca3301; 
+    border: 2.5px solid #ca3301;   
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background: #972600;
+    border: 2.5px solid #972600;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    background: transparent;
+    margin-left: 15px;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    background: #972600;
+}
+
+
+/***** MAIN *****/
+
+/* About us */
+
+.pizza-example img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px #000;
+}
+
+
+/* Our pizzas */
+
+.pizza-info img {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px #000;
+}
+
+.text-pizza {
+    margin-bottom: 25px;
+}
+
+.text-pizza element {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #ca3301;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+    background-color: #ca3301;
+    float: left;
+}
+
+.text-pizza p {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Reference */
+
+.reference{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.reference h2 {
+    color: #fff;
+    padding-top: 40px;
+    font-size: 30px;
+    text-transform: uppercase; 
+}
+
+.reference h2:after {
+    border-bottom: 2px solid #fff;
+    display: block;
+    content: "";
+    width: 550px;              
+}
+
+.one-reference {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p {
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.photo-name img {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 21px;
+}
+
+.photo-name {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.photo-name p {
+    padding: 30px;
+    font-style: normal   
+}
+
+
+/* Photo gallery */
+
+.photo-galery h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;    
+}
+
+.photo-galery h2:after {
+    border-bottom: 2px solid #ca3301;
+    display: block;
+    content: "";
+    width: 500px;              
+}
+
+.photo-segment li {
+    list-style-type: none;  /* vymazat tečky u "ul" seznamu */
+    height: 300px;  /* sjednotit výšku, aby zmizel černý pruh pozadí */
+    background-color: #000000d5;
+    overflow: hidden;   /* skryj to, co přeteče nad 100 % */
+    border-radius: 10px;
+}
+
+.photo-segment img {
+    width: 100%;
+    height: 300px;
+    opacity: 0.5;   /* průhlednost */
+    transform: scale(1.15); /* zvětšit na 115 % */ 
+}
+
+.photo-segment img:hover {
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Stop floating *****/
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
