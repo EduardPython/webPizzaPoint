@@ -49,8 +49,8 @@ header {
     background-size: cover;
     height: 100vh;
     /* background-position: center; */
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat; 
+    background-attachment: fixed;   /* Zafixuj obrazek na pozadi */
 }
 
 
@@ -229,6 +229,7 @@ p {
     background-size: cover;
     height: auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .reference h2 {
@@ -402,7 +403,7 @@ input[type="submit"]:hover {
 .social-media p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline;
-    padding: 20px;
+    padding: 25px;
 }
 
 .social-media a:link,
@@ -418,6 +419,11 @@ input[type="submit"]:hover {
     color: #f4d2c6;
     border-bottom: 2px solid #f4d2c6;
     transition: color 0.5s, border-bottom 0.5s;
+}
+
+.social-media img {
+    width: 60px;
+    margin-top: 5px;
 }
 
 .footer-text {
