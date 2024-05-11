@@ -10,7 +10,7 @@
 /***** Reusable Components *****/
 
 .row {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@
     content: "";
     display: block;
     height: 2px;
-    width: 1140px;
+    max-width: 700px;
     border-bottom: solid 2px #ca3301;
     margin: 0 auto;
     margin-top: 10px;
@@ -48,7 +48,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
     background-size: cover;
     height: 100vh;
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat; 
     background-attachment: fixed;   /* Zafixuj obrazek na pozadi */
 }
@@ -56,16 +56,18 @@ header {
 
 /* Logo */
 
-#logo {
+/* #logo {
     float: left;    
     margin: 0 auto;
     position: absolute;
     top: 4%;
     left: 121px;    
-}
+} */
 
 #logo img {
-    width: 100px;
+    width: 150px;
+    position: absolute;
+    top: 2%;
 }
 
 
@@ -227,7 +229,6 @@ p {
 .reference{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
     background-size: cover;
-    height: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -279,20 +280,6 @@ p {
 
 /* Photo gallery */
 
-.photo-galery h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20px;    
-}
-
-.photo-galery h2:after {
-    border-bottom: 2px solid #ca3301;
-    display: block;
-    content: "";
-    width: auto;              
-}
-
 .photo-segment li {
     list-style-type: none;  /* vymazat tečky u "ul" seznamu */
     height: 300px;  /* sjednotit výšku, aby zmizel černý pruh pozadí */
@@ -301,16 +288,16 @@ p {
     border-radius: 10px;
 }
 
-.photo-segment img {
+.photo-segment li img {
     width: 100%;
     height: 300px;
     opacity: 0.5;   /* průhlednost */
-    transform: scale(1.15); /* zvětšit na 115 % */ 
+    transform: scale(1.35); /* zvětšit na 115 % */ 
 }
 
-.photo-segment img:hover {
-    opacity: 1;
-    transform: scale(1);
+.photo-segment li img:hover {
+    opacity: 1; /* původní průhlednost */
+    transform: scale(1);    /* zvětšit na 100 % */
     transition: transform 0.5s, opacity 1s;
 }
 
@@ -318,44 +305,27 @@ p {
 
 /* Contact form */
 
-.contact-form h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20px;    
-}
-
-.contact-form h2:after {
-    border-bottom: 2px solid #ca3301;
-    display: block;
-    content: "";
-    width: auto;              
-}
-
 .contact-form {
+    max-width: 800px;
+    text-align: center;   
     padding-top: 10px;
-    width: 800px;
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;    
 }
 
 .contact-form input {
-    margin-bottom: 10px;
     width: 80%;
     font-size: 20px;
     line-height: 1.5;    
-    padding: 7px 10px;
+    padding: 5px 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #ccc;
+    margin: 7px 0;
 }
 
 .contact-form textarea {
-    margin-bottom: 10px;
     width: 80%;
-    height: 300px;
+    height: 250px;
+    margin: 7px 0;
     font-size: 20px;
     line-height: 1.5;    
     padding: 7px 10px;
@@ -386,55 +356,49 @@ input[type="submit"]:hover {
 /***** Footer *****/
 
 .footer-page {
-    /* background-color: #ca3301; */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
+    background: #ca3301;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg"); */
     color: #fff;
-    margin-top: 40px;
-    /* padding: 10px; */
-    /* font-size: 10px; */
-    /* line-height: 1.5;     */
+    margin-top: 50px;
 }
 
-.social-media {
+.social {
     text-align: center;
-    margin: 10px;
+    margin: 10px 0;
 }
 
-.social-media p {
+.social p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline;
-    padding: 25px;
+    margin: 20px;
 }
 
-.social-media a:link,
-.social-media a:visited {
+.social p a:link,
+.social p a:visited {
     text-decoration: none;
     color: #fff;
     font-size: 25px;
     border-bottom: 2px solid transparent;
 }
 
-.social-media a:hover,
-.social-media a:active {
+.social p a:hover,
+.social p a:active {
     color: #f4d2c6;
     border-bottom: 2px solid #f4d2c6;
     transition: color 0.5s, border-bottom 0.5s;
 }
 
-.social-media img {
+/* .social p img {
     width: 60px;
     margin-top: 5px;
-}
+} */
 
 .footer-text {
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    margin: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
-.footer-text p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 
 
