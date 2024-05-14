@@ -1,0 +1,82 @@
+/* všechny displeje do 1180px */
+@media only screen and (max-width: 1180px) {
+   
+    /*** Photo gallery ***/
+
+    /* vytvoř okraje obrázkům od šířky displeje 1180px */
+    .photo-segment {
+        margin-left: 2%;
+        margin-right: 2%;
+    } 
+
+    /*** Reference ***/
+
+    /* zarovnej reference vedle sebe (od šířky obrazovky 1180px) */
+    .col.span-1-of-3.one-reference {
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-right: 3%;        
+    }
+
+    /* nech zmizet třetí výskyt ".one-reference" (od šířky obrazovky 1180px) */
+    .one-reference:nth-child(3) {
+    display: none;
+}
+   
+}
+
+
+@media only screen and (max-width: 820px) {
+
+    /*** Reference ***/
+    
+    /* vrať referencím původní velikost (od šířky obrazovky 820px)  */
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        /* margin-left: 2%; */
+        /* margin-right: 2%;   */
+        /* padding-right: 10px   */
+    }
+    
+    /* zarovnej photo-name doprava */
+    .photo-name {
+        float: right;
+    }
+
+    /* nech znovu objevit třetí výskyt ".one-reference" (od šířky obrazovky 600px) */
+    .one-reference:nth-child(3) {
+        display: contents;
+}
+
+}
+
+    
+
+
+/* všechny displeje do 750px */
+@media only screen and (max-width: 750px) {
+
+    /*** Reference ***/
+
+    /* vrať referencím původní velikost (od šířky obrazovky 750px)  */
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;    
+    }
+
+
+    /*** Photo gallery ***/
+
+    /* zarovnej obrázky */
+    .photo-segment .col {
+        margin-left: 0;
+    }
+
+    /* vrať obrázkům původní velikost (od šířky obrazovky 750px) */
+    .photo-segment li {
+        width: 100%;
+    }
+}
+

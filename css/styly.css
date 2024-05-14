@@ -7,7 +7,7 @@
 }
 
 
-/***** Reusable Components *****/
+/***** REUSABLE COMPONENTS *****/
 
 .row {
     max-width: 1140px;
@@ -42,7 +42,7 @@
 
 /***** HEADER *****/
 
-/* Header */
+/*** Header ***/
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
@@ -54,7 +54,7 @@ header {
 }
 
 
-/* Logo */
+/*** Logo ***/
 
 /* #logo {
     float: left;    
@@ -71,7 +71,7 @@ header {
 }
 
 
-/* Navigation */
+/*** Navigation ***/
 
 nav {
     width: 100%;
@@ -115,7 +115,7 @@ nav ul li img {
 }
 
 
-/* Header Text */
+/*** Header Text ***/
 
 .header_text {
     /* text-align: center; */
@@ -136,7 +136,7 @@ nav ul li img {
 }
 
 
-/* Buttons */
+/*** Buttons ***/
 
 .btn {
     display: inline-block;
@@ -177,7 +177,7 @@ nav ul li img {
 
 /***** MAIN *****/
 
-/* About us */
+/*** About us ***/
 
 .pizza-example img {
     width: 100%;
@@ -186,7 +186,7 @@ nav ul li img {
 }
 
 
-/* Our pizzas */
+/*** Our pizzas ***/
 
 .pizza-info img {
     width: 100%;
@@ -224,7 +224,7 @@ p {
 }
 
 
-/* Reference */
+/*** Reference ***/
 
 .reference{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/pizza_1920.jpg");
@@ -278,14 +278,13 @@ p {
 }
 
 
-/* Photo gallery */
+/*** Photo gallery ***/
 
 .photo-segment li {
     list-style-type: none;  /* vymazat tečky u "ul" seznamu */
     height: 300px;  /* sjednotit výšku, aby zmizel černý pruh pozadí */
     background-color: #000000d5;
-    overflow: hidden;   /* skryj to, co přeteče nad 100 % */
-    border-radius: 10px;
+    overflow: hidden;   /* skryj to, co přeteče nad 100 % */    
 }
 
 .photo-segment li img {
@@ -303,7 +302,7 @@ p {
 
 
 
-/* Contact form */
+/*** Contact form ***/
 
 .contact-form {
     max-width: 800px;
@@ -353,7 +352,7 @@ input[type="submit"]:hover {
 }
 
 
-/***** Footer *****/
+/***** FOOTER *****/
 
 .footer-page {
     background: #ca3301;
